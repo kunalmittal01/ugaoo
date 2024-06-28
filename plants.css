@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Outfit , sans-serif;
-}
-
 header nav .navbar1-items{
     display: flex;
     justify-content: space-around;
@@ -122,18 +118,6 @@ header nav .navbar2 .nav-items{
 .nav-icons svg{
     width: 1rem;
 }
-.navbar2 .navbar2-items-menu .nav-list ul{
-    list-style: none;
-} 
-.navbar2 .navbar2-items-menu .nav-list ul a{
-    text-decoration: none;
-    color:#149253;
-    font-size: 10px;
-} 
-.navbar2 .navbar2-items-menu .nav-list ul a:hover{
-    text-decoration: underline;
-    text-underline-offset: 2px;
-}
 @media  screen and (width>= 990px) and (width<1260px){
     .navbar2 .nav-items{
         width: 40rem !important;
@@ -164,16 +148,6 @@ header nav .navbar2 .nav-items{
         grid-column: 1;
         grid-row: 1;
     }
-
-    .navbar2 .navbar2-items-menu .nav-list{
-        display: none;
-    }
-
-    .navbar2 .navbar2-items-menu:hover .nav-list{
-        display: block !important;
-        transition: 1s;
-    } 
-    
 
     .navbar2 .img{
         grid-column: 2;
@@ -259,7 +233,8 @@ header nav .navbar2 .nav-items{
     }
 } 
 
-/* Muskan */
+
+/* JUNAID */
 
 
 #box1{
@@ -275,12 +250,15 @@ header nav .navbar2 .nav-items{
     text-decoration: none;
     color: #4c5c5c;
 }
+#box1 p{
+    color: #0A4C36;
+}
 #box2 img{
     width: 97vw;
     margin-left: 10px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
-    
+    /* overflow: hidden; */
 
 }
 #box2 img:hover {
@@ -341,10 +319,10 @@ header nav .navbar2 .nav-items{
     width: 100%;
 }
 #side-bar{
-    width: 25%;
     position: sticky;
     top: 0;
-    height: 95vh;
+    width: 25%;
+    height: 92vh;
     background-color: #FAFAFA;
     margin-left: 40px;
     z-index: 7;
@@ -352,11 +330,9 @@ header nav .navbar2 .nav-items{
  
 .filter-item {
     width: 100%;
-    height: 50px;
     display: flex;
     justify-content: space-between;
-    /* margin-top: 20px; */
-    padding: 15px;
+    padding: 10px;
     cursor: pointer;
 }
 
@@ -374,10 +350,14 @@ header nav .navbar2 .nav-items{
     text-decoration: underline;
 } 
 
+
+
+
+
 #cards{
-    width: 75%;
     display: flex;
     flex-wrap: wrap;
+    width: 75%;
     padding: 15px;
 }
 
@@ -406,7 +386,8 @@ header nav .navbar2 .nav-items{
 
 .card:hover img ,h3{
     transform: scale(1.05);
-    transform-origin: center;  
+    transform-origin: center; 
+    /* border-radius: 5px;  */
 }
 .card .rating {
     display: inline-block;
@@ -461,10 +442,6 @@ header nav .navbar2 .nav-items{
 }
 .bottom-desc{
     line-height: 200%;
-    h4{
-        color: #1A1B18;
-        font-weight: 530;
-    }
 }
 .bottom-desc p{
     color: #595A5C;
@@ -476,201 +453,40 @@ header nav .navbar2 .nav-items{
 .bottom-desc a{
     color: blue;
 }
+#container{
+    width: 80vw;
+    margin: 40px;
+    h2{
+        font-size: x-large;
+    }
+}
 
-/* responsive css for tablet */
-
-@media  screen and (width>= 450px) and (width<780px){
-    
-    #nav-bar{
-        justify-content: space-between;
-        margin-left: 20px;
-        z-index: 20;
-    }
-    #nav-bar form select{
-        width: 160px;
-        
-    }
-    #side-bar{
-        top:11%;
-        width: 30%;
-        margin-left: 30px;
-    }
-    
-    
-    #cards{
-        display: flex;
-        flex-wrap: wrap;
-        width: 69%;
-        padding: 15px;
-    }
-    
-    .card {
-        width: 49%;
-        padding: 20px;
-        text-align: center;
-    }
-    .image{
-        overflow: hidden;
-        border-radius: 5px;
-    }
-    .image img{
-        height: 170px;
-    }
-    .card h3{
-        height: 30px;
-    }
-    
-    .card .rating .star {
-        font-size: large;
-    }
-    
-    .card .price {
-        font-size: 15px;
-    }
-    .card .button {
-        padding: 6px 12px;
-    }
-    
-    .card .sale{
-        width: 40%;
-        height: 6%;
-        top: 30px;
-        left: 8px;
+.triangle_down1 {
+    width: 10px;
+    height: 10px;
+    border-right: 0.1em solid #3e3c3c;
+    border-top: 0.1em solid #3e3c3c;
+    transform: rotate(135deg);
+}
+.question{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(32, 32, 32);
+    padding: 20px;
+    font-size: small;
+    cursor: pointer;
+    h3{
+        color: #3e3c3c;
     }
     
 }
-/* responsive css for tablet */
 
-@media  screen and (width>= 300px) and (width<450px){
-    #nav-bar{
-        justify-content: space-between;
-        margin-left: 20px;
-        z-index: 20;
-    }
-    #nav-bar form select{
-        width: 160px;
-    }
+/* footer-1 */
 
-    #main-bar{
-        flex-direction: row;
-    }
 
-    #side-bar{
-        top:10%;
-        left: 0%;
-        width: 40%;
-        margin-left: 10px;
-        height: 100vh;
-        /* overflow: hidden; */
-    }
-    
-    #cards{
-        display: flex;
-        flex-wrap: wrap;
-        width: 60%;
-        justify-content: center;
-    }
-    
-    .card {
-        width: 100%;
-        text-align: center;
-    }
-    .image{
-        overflow: hidden;
-        border-radius: 5px;
-    }
-    .image img{
-        height: 170px;
-    }
-    .card h3{
-        height: 30px;
-    }
-    
-    .card .rating .star {
-        font-size: large;
-    }
-    
-    .card .price {
-        font-size: 15px;
-    }
-    .card .button {
-        padding: 6px 12px;
-    }
-    
-    .card .sale{
-        width: 40%;
-        height: 6%;
-        top: 30px;
-        left: 8px;
-    }
-
-}
-
-@media  screen and (width>= 0px) and (width<300px){
-    
-    #nav-bar{
-        justify-content: space-between;
-        margin-left: 20px;
-        z-index: 20;
-    }
-    #nav-bar form select{
-        width: 160px;
-    }
-
-    #main-bar{
-        flex-direction: column;
-    }
-
-    #side-bar{
-        top:10%;
-        left: 0%;
-        width: 100%;
-        margin-left: 10px;
-        height: 9vh;
-        overflow: hidden;
-    }
-    
-    #cards{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .card {
-        width: 100vw;
-        text-align: center;
-    }
-    .image{
-        overflow: hidden;
-        border-radius: 5px;
-    }
-    .image img{
-        height: 170px;
-    }
-    .card h3{
-        height: 30px;
-    }
-    
-    .card .rating .star {
-        font-size: large;
-    }
-    
-    .card .price {
-        font-size: 15px;
-    }
-    .card .button {
-        padding: 6px 12px;
-    }
-    
-    .card .sale{
-        width: 40%;
-        height: 6%;
-        top: 30px;
-        left: 8px;
-    }
-    
-}
 .stripe{
     display: flex;
     justify-content: space-around;
@@ -820,3 +636,200 @@ footer .followus-icons p{
         flex-direction: column !important;
     }
 }
+
+
+/* responsive css for tablet */
+
+@media  screen and (width>= 450px) and (width<780px){
+    
+    #nav-bar{
+        justify-content: space-between;
+        margin-left: 20px;
+        z-index: 20;
+    }
+    #nav-bar form select{
+        width: 160px;
+        
+    }
+    #side-bar{
+        top:11%;
+        width: 30%;
+        margin-left: 30px;
+    }
+    
+    
+    #cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 69%;
+        padding: 15px;
+    }
+    
+    .card {
+        width: 49%;
+        padding: 20px;
+        text-align: center;
+    }
+    .image{
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    .image img{
+        height: 170px;
+    }
+    .card h3{
+        height: 30px;
+    }
+    
+    .card .rating .star {
+        font-size: large;
+    }
+    
+    .card .price {
+        font-size: 15px;
+    }
+    .card .button {
+        padding: 6px 12px;
+    }
+    
+    .card .sale{
+        width: 40%;
+        height: 6%;
+        top: 30px;
+        left: 8px;
+    }
+    
+}
+
+
+@media  screen and (width>= 300px) and (width<450px){
+    #nav-bar{
+        justify-content: space-between;
+        margin-left: 20px;
+        z-index: 20;
+    }
+    #nav-bar form select{
+        width: 160px;
+    }
+
+    #main-bar{
+        flex-direction: row;
+    }
+
+    #side-bar{
+        top:10%;
+        left: 0%;
+        width: 40%;
+        margin-left: 10px;
+        height: 100vh;
+        /* overflow: hidden; */
+    }
+    
+    #cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        justify-content: center;
+    }
+    
+    .card {
+        width: 100%;
+        text-align: center;
+    }
+    .image{
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    .image img{
+        height: 170px;
+    }
+    .card h3{
+        height: 30px;
+    }
+    
+    .card .rating .star {
+        font-size: large;
+    }
+    
+    .card .price {
+        font-size: 15px;
+    }
+    .card .button {
+        padding: 6px 12px;
+    }
+    
+    .card .sale{
+        width: 40%;
+        height: 6%;
+        top: 30px;
+        left: 8px;
+    }
+
+}
+
+@media  screen and (width>= 0px) and (width<300px){
+    
+    #nav-bar{
+        justify-content: space-between;
+        margin-left: 20px;
+        z-index: 20;
+    }
+    #nav-bar form select{
+        width: 160px;
+    }
+
+    #main-bar{
+        flex-direction: column;
+    }
+
+    #side-bar{
+        top:10%;
+        left: 0%;
+        width: 100%;
+        margin-left: 10px;
+        height: 9vh;
+        overflow: hidden;
+    }
+    
+    #cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .card {
+        width: 100vw;
+        text-align: center;
+    }
+    .image{
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    .image img{
+        height: 170px;
+    }
+    .card h3{
+        height: 30px;
+    }
+    
+    .card .rating .star {
+        font-size: large;
+    }
+    
+    .card .price {
+        font-size: 15px;
+    }
+    .card .button {
+        padding: 6px 12px;
+    }
+    
+    .card .sale{
+        width: 40%;
+        height: 6%;
+        top: 30px;
+        left: 8px;
+    }
+    
+}
+

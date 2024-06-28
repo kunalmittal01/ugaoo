@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Outfit , sans-serif;
+body{
+    font-family: sans-serif;
 }
+
 
 header nav .navbar1-items{
     display: flex;
@@ -259,418 +260,141 @@ header nav .navbar2 .nav-items{
     }
 } 
 
-/* Muskan */
 
+
+/* JUNAID */
 
 #box1{
     width: 95vw;
-    height: 50px;
+    height: 100px;
     display: flex;
     align-items: center;
     margin-left: 40px;
     gap: 5px;
     color: #0A4C36;
 }
+#box1 p{
+    color: #0A4C36;
+}
 #box1 a{
     text-decoration: none;
     color: #4c5c5c;
 }
-#box2 img{
-    width: 97vw;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
+#box2{
+    width: 98vw;
+    height: 120px;
+    text-align: end;
     
-
 }
-#box2 img:hover {
-    transform: scale(0.95);
-    transform-origin: center;  
-}
-#box3{
-    width: 95vw;
-    margin-top: 20px;
-    margin-left: 40px;
-}
-#box3 h1{
-    font-size: xx-large;
-    height: 50px;
-}
-#box3 p{
-    font-size: larger;
-    color: #4c5c5c;
-}
-#main-sec{
-    position: relative;
-}
-#nav-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 20px;
-    width: 95vw;
-    height: 60px;
-    background-color: white;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    left: 29vw;
-    p{
-        color: #B4C2C8;
+form {
+    input{
+        width: 200px;
+        height: 30px;
+        border: 1px solid black;
+        padding: 5px;
     }
-    margin-right: 20px;
-    z-index: 5;
-}
-#nav-bar form select{
-    width: 200px;
-    height: 40px;
-    border: 3px solid #149253;
-    padding-left: 20px;
-    cursor: pointer;
-    transition: background-position 0.4s;
-    color: #149253;
-    background-image: linear-gradient(to bottom, transparent 50%, #149253 50%);
-    background-size: 100% 200%;
-} 
-#nav-bar form select:hover {
-    background-position: 0% 100%;
-    color: white;
-}
-#main-bar{
-    display: flex;
-    width: 100%;
-}
-#side-bar{
-    width: 25%;
-    position: sticky;
-    top: 0;
-    height: 95vh;
-    background-color: #FAFAFA;
-    margin-left: 40px;
-    z-index: 7;
-}
- 
-.filter-item {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    /* margin-top: 20px; */
-    padding: 15px;
-    cursor: pointer;
+    button{
+        width: 80px;
+        height: 30px;
+        background-color: #008000;
+        color: white;
+        border: none;
+    }
+    padding: 45px;
 }
 
-.filter-item p{
+#box3{
+    width: 97vw;
+    margin: 15px;
+}
+
+.heading{
+    margin-top: 20px;
+    width: 90%;
+    font-size: x-large;
+    margin: 25px;
+}
+
+.detail{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin: 0;
+}
+.parts{
+    width: 46.5%;
+    height: 100vh;
+    margin-left: 25px;
+    padding: 5px;
+}
+  
+.image{
+    width: 100%;
+    height: 65%;
+    overflow: hidden; 
+} 
+
+img{
+    width: 100%; 
+    height: 100%; 
+    transition: transform 0.4s;
+}
+.parts:hover img,h3,.sale{
+    transform: scale(1.05);
+    transform-origin: center;
+}
+
+.caption{
+    width: 100%;
+    margin-top: 8px;
+    /* height: 30px; */
     font-size: medium;
 }
   
-.filter-item .icon{
-    font-size: 30px;
-    border-radius: 50%;
-    background-color: white;    
-}
+.content {
+    margin-top: 20px;
+    .date{
+        color: #d5d5da;
+    }
+    p{
+        width: 100%;
+        margin-top: 20px;
+        color: #797C76;
+    }
+  }
   
-.clear-all:hover {
-    text-decoration: underline;
+.read-more {
+    margin-top: 20px;
+    color: #242523d8;
+    cursor: pointer;
 } 
 
-#cards{
-    width: 75%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px;
-}
-
-.card {
-    width: 33%;
-    padding: 20px;
+.view{
+    width: 90vw;
+    height: 20vh;
     text-align: center;
-}
-.image{
-    overflow: hidden;
-    border-radius: 5px;
-}
-.image img{
-    width: 100%;
-    height: 270px;
-    object-fit: cover;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.4s ease-in-out;
-}
-.card h3{
-    height: 40px;
-    margin-top: 10px;
     cursor: pointer;
 }
 
-.card:hover img ,h3{
-    transform: scale(1.05);
-    transform-origin: center;  
-}
-.card .rating {
-    display: inline-block;
-    margin-top: 10px;
-    color: #4CAF50;
-}
-
-.card .rating .star {
-    font-size: x-large;
-    color: gold;
-}
-
-.card .price {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #4CAF50;
-}
-.price .from{
-    text-decoration: line-through;
-    color: #CFCFCF;
-}
-
-.card .button {
+.button {
+    width: 20%;
     background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 38px 2px;
     cursor: pointer;
-    margin-top: 20px;
-    display: block;
-    width: 100%;
 }
 
-.card .sale{
-    position: relative;
-    width: 20%;
-    height: 5%;
-    top: 32px;
-    left: 10px;
-    background-color:  gold;
-    color: black;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    z-index: 3;
-}
 
-.about{
-    margin: 40px;
-}
-.bottom-desc{
-    line-height: 200%;
-    h4{
-        color: #1A1B18;
-        font-weight: 530;
-    }
-}
-.bottom-desc p{
-    color: #595A5C;
-}
-.bottom-desc h2,h3,p{
-    font-size: large;
-    color: black;
-}
-.bottom-desc a{
-    color: blue;
-}
+/* footer-1 */
 
-/* responsive css for tablet */
 
-@media  screen and (width>= 450px) and (width<780px){
-    
-    #nav-bar{
-        justify-content: space-between;
-        margin-left: 20px;
-        z-index: 20;
-    }
-    #nav-bar form select{
-        width: 160px;
-        
-    }
-    #side-bar{
-        top:11%;
-        width: 30%;
-        margin-left: 30px;
-    }
-    
-    
-    #cards{
-        display: flex;
-        flex-wrap: wrap;
-        width: 69%;
-        padding: 15px;
-    }
-    
-    .card {
-        width: 49%;
-        padding: 20px;
-        text-align: center;
-    }
-    .image{
-        overflow: hidden;
-        border-radius: 5px;
-    }
-    .image img{
-        height: 170px;
-    }
-    .card h3{
-        height: 30px;
-    }
-    
-    .card .rating .star {
-        font-size: large;
-    }
-    
-    .card .price {
-        font-size: 15px;
-    }
-    .card .button {
-        padding: 6px 12px;
-    }
-    
-    .card .sale{
-        width: 40%;
-        height: 6%;
-        top: 30px;
-        left: 8px;
-    }
-    
-}
-/* responsive css for tablet */
-
-@media  screen and (width>= 300px) and (width<450px){
-    #nav-bar{
-        justify-content: space-between;
-        margin-left: 20px;
-        z-index: 20;
-    }
-    #nav-bar form select{
-        width: 160px;
-    }
-
-    #main-bar{
-        flex-direction: row;
-    }
-
-    #side-bar{
-        top:10%;
-        left: 0%;
-        width: 40%;
-        margin-left: 10px;
-        height: 100vh;
-        /* overflow: hidden; */
-    }
-    
-    #cards{
-        display: flex;
-        flex-wrap: wrap;
-        width: 60%;
-        justify-content: center;
-    }
-    
-    .card {
-        width: 100%;
-        text-align: center;
-    }
-    .image{
-        overflow: hidden;
-        border-radius: 5px;
-    }
-    .image img{
-        height: 170px;
-    }
-    .card h3{
-        height: 30px;
-    }
-    
-    .card .rating .star {
-        font-size: large;
-    }
-    
-    .card .price {
-        font-size: 15px;
-    }
-    .card .button {
-        padding: 6px 12px;
-    }
-    
-    .card .sale{
-        width: 40%;
-        height: 6%;
-        top: 30px;
-        left: 8px;
-    }
-
-}
-
-@media  screen and (width>= 0px) and (width<300px){
-    
-    #nav-bar{
-        justify-content: space-between;
-        margin-left: 20px;
-        z-index: 20;
-    }
-    #nav-bar form select{
-        width: 160px;
-    }
-
-    #main-bar{
-        flex-direction: column;
-    }
-
-    #side-bar{
-        top:10%;
-        left: 0%;
-        width: 100%;
-        margin-left: 10px;
-        height: 9vh;
-        overflow: hidden;
-    }
-    
-    #cards{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .card {
-        width: 100vw;
-        text-align: center;
-    }
-    .image{
-        overflow: hidden;
-        border-radius: 5px;
-    }
-    .image img{
-        height: 170px;
-    }
-    .card h3{
-        height: 30px;
-    }
-    
-    .card .rating .star {
-        font-size: large;
-    }
-    
-    .card .price {
-        font-size: 15px;
-    }
-    .card .button {
-        padding: 6px 12px;
-    }
-    
-    .card .sale{
-        width: 40%;
-        height: 6%;
-        top: 30px;
-        left: 8px;
-    }
-    
-}
 .stripe{
     display: flex;
     justify-content: space-around;
@@ -818,5 +542,81 @@ footer .followus-icons p{
     .footer-wrapper{
         display: flex !important;
         flex-direction: column !important;
+    }
+}
+
+
+/* 
+Junaid media qurey */
+
+
+@media  screen and (width>= 550px) and (width<750px){
+    .parts{
+        width: 45%;
+        height: 90vh;
+    }
+      
+    .image{
+        height: 40%; 
+    }
+    
+    .view{
+        width: 90vw;
+        height: 30vh;
+        text-align: center;
+    }
+    
+    .button {
+        width: 40%;
+        height: 50px;
+    }
+}
+@media  screen and (width>= 5px) and (width<550px){
+    
+    #box2{
+        text-align: start;
+    }
+  .parts{
+        width: 98%;
+        height: 85vh;
+        margin-top: 10px;
+    }
+      
+    .image{
+        height: 50%; 
+        border-radius: 5px solid transparent;
+    }
+    
+    .view{
+        width: 90vw;
+        height: 30vh;
+        text-align: center;
+    }
+    
+    .button {
+        width: 40%;
+        height: 50px;
+    }
+}
+
+@media  screen and (width>= 5px) and (width<350px){
+   
+    #box2{
+        text-align: start;
+    }
+    form {
+        input{
+            width: 80%;
+            height: 30px;
+            border: 1px solid black;
+            padding-left: 10px;
+        }
+        button{
+            width: 50%;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 13%;
+        }
+       
     }
 }
