@@ -273,7 +273,7 @@ form {
 }
 
 #box3{
-    width: 96vw;
+    width: 97vw;
     margin: 15px;
 }
 
@@ -291,7 +291,7 @@ form {
     cursor: pointer;
 }
 .parts{
-    width: 47%;
+    width: 45%;
     height: 100vh;
     margin-left: 25px;
     padding: 5px;
@@ -458,5 +458,81 @@ footer .followus-icons p{
     .footer-wrapper{
         display: flex !important;
         flex-direction: column !important;
+    }
+}
+
+
+/* 
+Junaid media qurey */
+
+
+@media  screen and (width>= 550px) and (width<750px){
+    .parts{
+        width: 45%;
+        height: 90vh;
+    }
+      
+    .image{
+        height: 40%; 
+    }
+    
+    .view{
+        width: 90vw;
+        height: 30vh;
+        text-align: center;
+    }
+    
+    .button {
+        width: 40%;
+        height: 50px;
+    }
+}
+@media  screen and (width>= 5px) and (width<550px){
+    
+    #box2{
+        text-align: start;
+    }
+  .parts{
+        width: 98%;
+        height: 85vh;
+        margin-top: 10px;
+    }
+      
+    .image{
+        height: 50%; 
+        border-radius: 5px solid transparent;
+    }
+    
+    .view{
+        width: 90vw;
+        height: 30vh;
+        text-align: center;
+    }
+    
+    .button {
+        width: 40%;
+        height: 50px;
+    }
+}
+
+@media  screen and (width>= 5px) and (width<350px){
+   
+    #box2{
+        text-align: start;
+    }
+    form {
+        input{
+            width: 80%;
+            height: 30px;
+            border: 1px solid black;
+            padding-left: 10px;
+        }
+        button{
+            width: 50%;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 13%;
+        }
+       
     }
 }
