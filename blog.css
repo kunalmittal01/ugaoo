@@ -95,7 +95,9 @@ header nav .navbar2 .nav-items{
 
 .nav-icons{
     display: flex;
-    width: 10%;
+    justify-content: flex-end;
+    width: 30px;
+    
     justify-content: space-around;
     align-items: center;
     color: rgba(1, 8, 1, 0.884);
@@ -289,9 +291,10 @@ form {
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
+    margin: 0;
 }
 .parts{
-    width: 45%;
+    width: 46.5%;
     height: 100vh;
     margin-left: 25px;
     padding: 5px;
@@ -342,6 +345,7 @@ img{
     width: 90vw;
     height: 20vh;
     text-align: center;
+    cursor: pointer;
 }
 
 .button {
@@ -359,8 +363,59 @@ img{
 }
 
 
+/* footer-1 */
 
-/* footer */
+
+.stripe{
+    display: flex;
+    justify-content: space-around;
+    background-color: #114C36;
+    padding: 16px 0;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+.stripe img{
+    width: 32px;
+    height: 32px;
+}
+.stripe .stripe-info{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 15px;
+    color: #E4B3D6;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+
+    .stripe .last{
+        display: none ;
+    }
+}
+.location {
+    padding: 10px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.87);
+}
+.location ul{
+    display: flex;
+    gap: 0.8rem;
+    list-style-type: none;
+    flex-wrap: wrap;
+    font-size: 14px;
+    /* width: 50%; */
+}
+.location ul li a{
+    color: #114C36;
+}
+@media screen and (max-width: 400px){
+    .location {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* footer-2 */
 
 footer{
     display: flex;
