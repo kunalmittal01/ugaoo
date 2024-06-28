@@ -347,6 +347,10 @@ header nav .navbar2 .nav-items{
     text-decoration: underline;
 } 
 
+
+
+
+
 #cards{
     display: flex;
     flex-wrap: wrap;
@@ -477,3 +481,198 @@ header nav .navbar2 .nav-items{
     
 }
 
+
+/* responsive css for tablet */
+
+@media  screen and (width>= 450px) and (width<780px){
+    
+    #nav-bar{
+        justify-content: space-between;
+        margin-left: 20px;
+        z-index: 20;
+    }
+    #nav-bar form select{
+        width: 160px;
+        
+    }
+    #side-bar{
+        top:11%;
+        width: 30%;
+        margin-left: 30px;
+    }
+    
+    
+    #cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 69%;
+        padding: 15px;
+    }
+    
+    .card {
+        width: 49%;
+        padding: 20px;
+        text-align: center;
+    }
+    .image{
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    .image img{
+        height: 170px;
+    }
+    .card h3{
+        height: 30px;
+    }
+    
+    .card .rating .star {
+        font-size: large;
+    }
+    
+    .card .price {
+        font-size: 15px;
+    }
+    .card .button {
+        padding: 6px 12px;
+    }
+    
+    .card .sale{
+        width: 40%;
+        height: 6%;
+        top: 30px;
+        left: 8px;
+    }
+    
+}
+
+
+@media  screen and (width>= 300px) and (width<450px){
+    #nav-bar{
+        justify-content: space-between;
+        margin-left: 20px;
+        z-index: 20;
+    }
+    #nav-bar form select{
+        width: 160px;
+    }
+
+    #main-bar{
+        flex-direction: row;
+    }
+
+    #side-bar{
+        top:10%;
+        left: 0%;
+        width: 40%;
+        margin-left: 10px;
+        height: 100vh;
+        /* overflow: hidden; */
+    }
+    
+    #cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        justify-content: center;
+    }
+    
+    .card {
+        width: 100%;
+        text-align: center;
+    }
+    .image{
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    .image img{
+        height: 170px;
+    }
+    .card h3{
+        height: 30px;
+    }
+    
+    .card .rating .star {
+        font-size: large;
+    }
+    
+    .card .price {
+        font-size: 15px;
+    }
+    .card .button {
+        padding: 6px 12px;
+    }
+    
+    .card .sale{
+        width: 40%;
+        height: 6%;
+        top: 30px;
+        left: 8px;
+    }
+
+}
+
+@media  screen and (width>= 0px) and (width<300px){
+    
+    #nav-bar{
+        justify-content: space-between;
+        margin-left: 20px;
+        z-index: 20;
+    }
+    #nav-bar form select{
+        width: 160px;
+    }
+
+    #main-bar{
+        flex-direction: column;
+    }
+
+    #side-bar{
+        top:10%;
+        left: 0%;
+        width: 100%;
+        margin-left: 10px;
+        height: 9vh;
+        overflow: hidden;
+    }
+    
+    #cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .card {
+        width: 100vw;
+        text-align: center;
+    }
+    .image{
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    .image img{
+        height: 170px;
+    }
+    .card h3{
+        height: 30px;
+    }
+    
+    .card .rating .star {
+        font-size: large;
+    }
+    
+    .card .price {
+        font-size: 15px;
+    }
+    .card .button {
+        padding: 6px 12px;
+    }
+    
+    .card .sale{
+        width: 40%;
+        height: 6%;
+        top: 30px;
+        left: 8px;
+    }
+    
+}
