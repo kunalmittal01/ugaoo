@@ -479,7 +479,7 @@ header nav .navbar2 .nav-items{
 
 /* responsive css for tablet */
 
-@media  screen and (width>= 450px) and (width<780px){
+@media  screen and (width>= 500px) and (width<780px){
     
     #nav-bar{
         justify-content: space-between;
@@ -541,7 +541,7 @@ header nav .navbar2 .nav-items{
 }
 /* responsive css for tablet */
 
-@media  screen and (width>= 300px) and (width<450px){
+@media  screen and (width>= 400px) and (width<500px){
     #nav-bar{
         justify-content: space-between;
         margin-left: 20px;
@@ -606,7 +606,7 @@ header nav .navbar2 .nav-items{
 
 }
 
-@media  screen and (width>= 0px) and (width<300px){
+@media  screen and (width>= 0px) and (width<400px){
     
     #nav-bar{
         justify-content: space-between;

@@ -13,6 +13,9 @@ header nav .navbar1-items{
     font-size: 13px;
     font-weight: 600;
 }
+header{
+    overflow: hidden;
+}
 
 .navbar1 a{
     color: white;
@@ -75,6 +78,7 @@ header nav .navbar2 .nav-items{
     padding: 0.35rem 0.5rem;
     border-radius: 30px;
     background-color: white;
+    overflow: hidden;
 }
 
 .search input{
@@ -640,7 +644,7 @@ footer .followus-icons p{
 
 /* responsive css for tablet */
 
-@media  screen and (width>= 450px) and (width<780px){
+@media  screen and (width>= 500px) and (width<780px){
     
     #nav-bar{
         justify-content: space-between;
@@ -702,7 +706,7 @@ footer .followus-icons p{
 }
 
 
-@media  screen and (width>= 300px) and (width<450px){
+@media  screen and (width>= 400px) and (width<500px){
     #nav-bar{
         justify-content: space-between;
         margin-left: 20px;
@@ -767,7 +771,7 @@ footer .followus-icons p{
 
 }
 
-@media  screen and (width>= 0px) and (width<300px){
+@media  screen and (width>= 0px) and (width<400px){
     
     #nav-bar{
         justify-content: space-between;
@@ -829,6 +833,9 @@ footer .followus-icons p{
         height: 6%;
         top: 30px;
         left: 8px;
+    }
+    .question{
+        height: 100px;
     }
     
 }
