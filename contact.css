@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+main .container img{
+    width: 10rem;
+}
+h2{
+    font-size: 20px;
+    color: #000000b9;
+}
+.login-btn{
+    display: flex;
+    gap: 0.7rem;
+}
+.fb,.go{
+    display: flex;
+    gap: 0.59rem;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+}
+.go{
+    background-color: red;
+
+}
+.fb span,.go span{
+    font-size: 12px;
+}
+.fb,.go i{
+    font-size: 17px;
+}
+.fb{
+    background-color: blue;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:whitesmoke;
+    gap: 1rem;
+    border-radius: 10px;
+    padding: 3rem 2rem;
+}
+.fb:hover,.go:hover{
+    opacity: 0.6;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.8rem;
+    gap: 1rem;
+    width: 100%
+}
+.text input{
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 2rem;
+    border: none;
+    padding-left: 0.5rem;
+}
+.text p{
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.signin{
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+.signin span{
+    color: white;
+    width: 80%;
+    background-color: #149253;
+    border-radius: 5px;
+    padding: 0.4rem 5rem;
+}
+#last{
+    font-size: 10px;
+}
+#last span{
+    color: #149253;
+}
+#last {
+    color: #000000c2;
+}
+.text p:hover,#last span:hover{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}

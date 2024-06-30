@@ -22,6 +22,7 @@ header nav .navbar1-items{
 }
 
 header nav .navbar2{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,6 +35,11 @@ header nav .navbar2{
 }
 .navbar2 .nav-items .list{
     display: none;
+    color: #0F4C36;
+    font-size: 17px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    border-radius: 10px;
 }
 .navbar2 .nav-items .seed-list{
     display: none;
@@ -45,8 +51,31 @@ header nav .navbar2{
     display: none;
 }
 
-.navbar2 .nav-items #plant:hover{
-    display: visible !important;
+.navbar2 .nav-items .plants-container:hover .plants{
+    display: block ;
+}
+.navbar2 .nav-items .seed-container:hover .seed{
+    display: block;
+}
+.navbar2 .nav-items .planters-container:hover .pot-plant{
+    display: block;
+}
+
+.navbar2 .nav-items .care-container:hover .care{
+    display: block;
+}
+.navbar2 .nav-items .gifting-container:hover .gifting{
+    display: block;
+}
+.list p{
+    margin-bottom: 10px;
+}
+.list{
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    background-color: white;
+    padding: 10px;
 }
 header nav .navbar2 .nav-items{
     display: flex;
@@ -119,6 +148,17 @@ header nav .navbar2 .nav-items{
 }
 .nav-icons svg{
     width: 1rem;
+}
+.sub-nav-icons p{
+    position: absolute;
+    display: none;
+    text-align: center;
+    color: #1A1B18;
+    font-weight: bold;
+    font-size: 10px;
+}
+.sub-nav-icons:hover p{
+    display: block;
 }
 .navbar2 .navbar2-items-menu .nav-list ul{
     list-style: none;
@@ -327,6 +367,7 @@ header nav .navbar2 .nav-items{
     justify-content: space-around;
     overflow-x: auto;
     font-family: sans-serif;
+    gap: 1rem;
 }
 .home .home-cards .card{
     display: flex;
@@ -334,10 +375,12 @@ header nav .navbar2 .nav-items{
     justify-content: center;
     align-items: center;
     padding: 4rem 0;
+    /* width: 100rem; */
 }
 .home .home-cards .card p{
     color: #212326;
     margin-top: 0.5rem;
+    text-align: center;
 }
 .home .home-cards .card .home-card-img img{
     border-radius: 50px;
@@ -458,6 +501,7 @@ header nav .navbar2 .nav-items{
     margin-bottom: 0.5rem;
     color: #FFD02A;
 }
+
 .bestseller-cards .card .price {
 
     margin-bottom: 1rem;
@@ -479,13 +523,15 @@ header nav .navbar2 .nav-items{
     text-decoration: none;
     color: white;
     background-color: #149253;
-    padding: 0.6rem 2rem;
+    padding: 0.6rem 0.6rem;
+    font-size: 12px;
 }
 .bestseller .viewall{
     width: 14rem;
     margin: 0 auto;
     text-align: center;
     border-radius: 3px;
+    font-size: 18px;
 }
 .bestseller-cards .card:hover .bestseller-card-img{
     object-fit: cover;
@@ -552,6 +598,9 @@ header nav .navbar2 .nav-items{
     margin-bottom: 0.5rem;
     color: #FFD02A;
 }
+.bestseller .star i,.new-arrivals .star i{
+    margin-right: 0.47rem;
+}
 .new-arrival-cards .card .price {
 
     margin-bottom: 1rem;
@@ -573,7 +622,8 @@ header nav .navbar2 .nav-items{
     text-decoration: none;
     color: white;
     background-color: #149253;
-    padding: 0.6rem 2rem;
+    padding: 0.6rem 0.6rem;
+    font-size: 12px;
 }
 .new-arrivals .viewall{
     width: 14rem;
@@ -581,6 +631,7 @@ header nav .navbar2 .nav-items{
     text-align: center;
     border-radius: 3px;
     color: white;
+    font-size: 18px;
 }
 
 .new-arrivals .viewall a{
@@ -736,6 +787,9 @@ header nav .navbar2 .nav-items{
     color: #FFD02A;
     font-size: 10px;
     margin-bottom: 1.5rem;
+}
+.deal-content .star i{
+    margin-right: 0.5rem;
 }
 .deal-content .price{
     display: flex;
@@ -933,6 +987,7 @@ header nav .navbar2 .nav-items{
 
 
 .why{
+    position: relative;
     background-color: #EFF8F2;
     font-family: sans-serif;
 }
@@ -957,12 +1012,17 @@ header nav .navbar2 .nav-items{
 .why img{
     margin-bottom: 1.7rem;
 }
+
+
 .why .why-content-img p{
     text-align: center;
 }
-.why-views img{
+.why-views {
+    background-image: url(assets/why-viewsimg.webp);
     width: 100%;
-}
+    z-index: 2;
+}   
+
 .magic{
     display: flex;
     flex-direction: column;
@@ -1136,13 +1196,13 @@ header nav .navbar2 .nav-items{
     color: white;
     background-color: #149253;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 5px;
     font-size: 15px;
 }
 .club .club-content .club-refer{
     border: 2px solid #149253;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 5px;
     color: #1A1B18;
     font-size: 15px;
@@ -1279,7 +1339,9 @@ footer .content p:hover{
     text-decoration: underline;
     transition: text-decoration 5s;
 }
-
+footer .content{
+    overflow: hidden;
+}
 footer .news input{
     border-bottom: 2px solid #114C36;
     border-top: none;
