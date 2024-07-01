@@ -167,7 +167,7 @@ header nav .navbar2 .nav-items{
     }
 
     .navbar2 .navbar2-items-menu .nav-list{
-        display: none;
+        /* display: none; */
     }
 
     .navbar2 .navbar2-items-menu:hover .nav-list{

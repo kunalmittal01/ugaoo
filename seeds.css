@@ -20,6 +20,7 @@ header nav .navbar1-items{
 }
 
 header nav .navbar2{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,6 +33,11 @@ header nav .navbar2{
 }
 .navbar2 .nav-items .list{
     display: none;
+    color: #0F4C36;
+    font-size: 17px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    border-radius: 10px;
 }
 .navbar2 .nav-items .seed-list{
     display: none;
@@ -43,9 +49,33 @@ header nav .navbar2{
     display: none;
 }
 
-.navbar2 .nav-items #plant:hover{
-    display: visible !important;
+.navbar2 .nav-items .plants-container:hover .plants{
+    display: block ;
 }
+.navbar2 .nav-items .seed-container:hover .seed{
+    display: block;
+}
+.navbar2 .nav-items .planters-container:hover .pot-plant{
+    display: block;
+}
+
+.navbar2 .nav-items .care-container:hover .care{
+    display: block;
+}
+.navbar2 .nav-items .gifting-container:hover .gifting{
+    display: block;
+}
+.list p{
+    margin-bottom: 10px;
+}
+.list{
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    background-color: white;
+    padding: 10px;
+}
+
 header nav .navbar2 .nav-items{
     display: flex;
     width: 50%;
